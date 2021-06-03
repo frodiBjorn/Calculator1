@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div class="wrapper">
+        <div class="numbers">
+            <p>Введите число 1:
+                <input placeholder="число 1" id="num1" type="text">
+            </p>
+            <p>Введите число 2:
+                <input  oninput="this.value" placeholder="число 1" id="num2" type="text">
+            </p>
+        </div>
+        <div class="buttons">
+            <button onclick="sum()" id="btnPlus">+</button>
+            <button onclick="raznost()" id="btnMinus">-</button>
+            <button onclick="mul()" id="btnMul">*</button>
+            <button onclick="divorse()" id="btnDivision">/</button>
+        </div>
+
+        <div class="out">
+            <p id="out">Ваш ответ:</p>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
